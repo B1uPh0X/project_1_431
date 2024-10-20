@@ -7,8 +7,19 @@ id = "Elliptical Orbit"
 name = "To Do"
 
   [[processes.tasks]]
-  id = "task2"
-  title = "Researching using Dune and Oplot"
+  id = "task3"
+  title = "Having the Measurements of the Central Body"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = []
+
+  [[processes.tasks]]
+  id = "task4"
+  title = "Having the Measurements of First Orbiting Body"
   description = ""
   tag = "backlog"
   linkFiles = [ ]
@@ -21,14 +32,23 @@ name = "To Do"
 id = "process2"
 name = "In Progress"
 
-
+  [[processes.progress]]
+  id = "task2"
+  title = "Researching using Dune and Oplot"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = []
 
 [[processes]]
 id = "process3"
 name = "Done"
 tasks = [ ]
 
-  [[processes]]
+  [[processes.donetasks]]
   id = "task1"
   title = "Research on Elliptical Orbit"
   description = ""
