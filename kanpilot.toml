@@ -1,60 +1,109 @@
-name = "project"
+name = "Elliptical Orbit Project"
 skipFolders = [ "node_modules", ".vscode", "out", "dist", ".vscode-test" ]
 skipFiles = [ ".gitignore", "package.json" ]
 
 [[processes]]
-id = "Elliptical Orbit"
-name = "To Do"
+id = "ti89o6mr2v92thdsccpjdn1g"
+name = "TODO"
 
   [[processes.tasks]]
-  id = "task3"
-  title = "Having the Measurements of the Central Body"
-  description = ""
+  id = "vx2nau86wpg4pbvfu79wcew0"
+  title = "Having a Central Body for Orbit"
+  description = "<p>Need the main thing for the other things to orbit around</p>"
+  tag = "backlog"
+  linkFiles = [ "src/kanban/interface.ts" ]
+  dueDate = "Sat Oct 19 2024 09:49:14 GMT-0400 (Eastern Daylight Time)"
+  priority = ""
+
+    [[processes.tasks.checkList]]
+    id = "l747kda6oix0338xk9jmmg72"
+    title = "CheckList 1"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "y4pjj36wtcmkkrez6cc0xgoc"
+    title = "CheckList 2"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "xbshyqdecspmowvblospozv4"
+    title = "CheckList 3"
+    completed = false
+
+    [[processes.tasks.linkCommits]]
+    hash = "123456"
+    comment = ""
+
+  [[processes.tasks]]
+  id = "vq783zwugp95k640cmr7v1n2"
+  title = "Having the First Orbiting Body"
+  description = "<p>Have the measurements of the first orbiting object</p>"
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
-  checkList = [ ]
   priority = ""
-  linkCommits = []
+  linkCommits = [ ]
 
-  [[processes.tasks]]
-  id = "task4"
-  title = "Having the Measurements of First Orbiting Body"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = []
+    [[processes.tasks.checkList]]
+    id = "bv6259r560l93ku7dz7o3h38"
+    title = "Checklist 1"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "dblz7wshdqq0c275z9269631"
+    title = "Checklist 2"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "fjjx0l7yo10nuus1h9n2by0d"
+    title = "Checklist 3"
+    completed = false
 
 [[processes]]
-id = "process2"
+id = "wqbb0d381n2vhnyfrfyqtl4v"
 name = "In Progress"
 
-  [[processes.progress]]
-  id = "task2"
-  title = "Researching using Dune and Oplot"
-  description = ""
+  [[processes.tasks]]
+  id = "y4dpsh6t8q2dwrblfkcxztmd"
+  title = "Research on Dune and Oplot"
+  description = "<p>Find more about working with both dune and oplot</p>"
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = []
+  priority = "High"
+  linkCommits = [ ]
+
+    [[processes.tasks.checkList]]
+    id = "o8p7c2768lyjz2fmyn2zo0pz"
+    title = "Understanding how they work"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "ddmc1ovpgwf6j1q4mmeso5yj"
+    title = "Install them both"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "stra5n3wawig4sk7unen7w3l"
+    title = "Try and Run a Simple Program"
+    completed = false
+
+    [[processes.tasks.checkList]]
+    id = "tidvx9pxe2ok9c2djrkktxzp"
+    title = "Confirm with the Team"
+    completed = false
 
 [[processes]]
-id = "process3"
+id = "y138qcsjmr9vvqvvj9ucbr54"
 name = "Done"
-tasks = [ ]
 
-  [[processes.donetasks]]
-  id = "task1"
-  title = "Research on Elliptical Orbit"
-  description = ""
+  [[processes.tasks]]
+  id = "xexz8dbf0ohncf84j0j4hd7y"
+  title = "Researching on What to do for Project involving Oplot library"
+  description = "<p>Find a suitable project to do involving the oplot library, decided on Elliptical Orbits</p>"
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
   checkList = [ ]
   priority = ""
-  linkCommits = []
+  linkCommits = [ ]
