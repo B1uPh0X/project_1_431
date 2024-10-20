@@ -1,0 +1,40 @@
+name = "project"
+skipFolders = [ "node_modules", ".vscode", "out", "dist", ".vscode-test" ]
+skipFiles = [ ".gitignore", "package.json" ]
+
+[[processes]]
+id = "Elliptical Orbit"
+name = "To Do"
+
+  [[processes.tasks]]
+  id = "task2"
+  title = "Researching using Dune and Oplot"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = []
+
+[[processes]]
+id = "process2"
+name = "In Progress"
+
+
+
+[[processes]]
+id = "process3"
+name = "Done"
+tasks = [ ]
+
+  [[processes]]
+  id = "task1"
+  title = "Research on Elliptical Orbit"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = []
