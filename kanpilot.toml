@@ -59,6 +59,39 @@ name = "TODO"
     title = "Checklist 3"
     completed = false
 
+  [[processes.tasks]]
+  id = "zwartoqjsdpfh6mkcik0u1sg"
+  title = "Info Dialogue"
+  description = "Have the Necessary Parameters for Calulation, Will Inquire from the User"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "jldnt73huy4wxjyoywv42c2w"
+  title = "Calculation"
+  description = "Calculations are mades based on the measurements given"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "wdi5gb60rnv2ofywe0odgctn"
+  title = "Display/Simulation"
+  description = "<p>Will display the Orbits on a grid, with potentially one with the planets moving at a certain rate of time t.</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
 [[processes]]
 id = "wqbb0d381n2vhnyfrfyqtl4v"
 name = "In Progress"
