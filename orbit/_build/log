@@ -1,0 +1,16 @@
+# dune exec orbit
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/simonliang4/.cache/dune/db
+# Workspace root: /Users/simonliang4/Simon_Liang_CS431/project_1_431/orbit
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/simonliang4/.opam/default/bin/ocamlc.opt -config > /var/folders/20/0gszkc6s08sdh3g9h30qxjwc0000gn/T/dune_d0892d_output

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/orbit/META"
+  "_build/install/default/lib/orbit/dune-package"
+  "_build/install/default/lib/orbit/opam"
+]
+bin: [
+  "_build/install/default/bin/orbit"
+]

@@ -1,0 +1,4 @@
+(executable
+ (public_name orbit)
+ (name main)
+ (libraries orbit))
