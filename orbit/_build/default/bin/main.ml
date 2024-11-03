@@ -23,13 +23,15 @@ type current_time = {
 
 
 let input_float prompt =
-  Printf.printf "%s:\n " prompt;
+  Printf.printf "%s:\n" prompt;
+  flush stdout;
   Scanf.scanf "%f\n" (fun x -> x);
 
 ;;
 
 let input_int prompt =
-  Printf.printf "%s: \n" prompt;
+  Printf.printf "%s:\n" prompt;
+  flush stdout;
   Scanf.scanf "%d\n" (fun x -> x);
 
 ;;
@@ -42,8 +44,10 @@ let input_orbiting_body () =
   let inclination = input_float "Enter the inclination (radians)" in
   let argument_of_periapsis = input_float "Enter the argument of periapsis (radians)" in
   let longitude_of_ascending_node = input_float "Enter the longitude of ascending node (radians)" in
+  (* remove let body and everything below in the function so that it would just be 
+  {mass; semi_major_axis; eccentricity; true_anomaly; inclination; argument_of_periapsis; longitude_of_ascending_node}*)
   let body = {mass; semi_major_axis; eccentricity; true_anomaly; inclination; argument_of_periapsis; longitude_of_ascending_node} in
-  (* This is just so the error doesn't happen in that it's unused*)
+  (* This is just so the error doesn't happen in that it's unused yet*)
   let _ = body.mass in
   let _ = body.semi_major_axis in
   let _ = body.eccentricity in

@@ -60,17 +60,6 @@ name = "TODO"
     completed = false
 
   [[processes.tasks]]
-  id = "zwartoqjsdpfh6mkcik0u1sg"
-  title = "Info Dialogue"
-  description = "Have the Necessary Parameters for Calulation, Will Inquire from the User"
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
-  [[processes.tasks]]
   id = "jldnt73huy4wxjyoywv42c2w"
   title = "Calculation"
   description = "Calculations are mades based on the measurements given"
@@ -114,17 +103,37 @@ name = "In Progress"
     [[processes.tasks.checkList]]
     id = "ddmc1ovpgwf6j1q4mmeso5yj"
     title = "Install them both"
-    completed = false
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "stra5n3wawig4sk7unen7w3l"
     title = "Try and Run a Simple Program"
-    completed = false
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "tidvx9pxe2ok9c2djrkktxzp"
     title = "Confirm with the Team"
     completed = false
+
+  [[processes.tasks]]
+  id = "zwartoqjsdpfh6mkcik0u1sg"
+  title = "Info Dialogue"
+  description = "<p>Have the Necessary Parameters for Calulation, Will Inquire from the User</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  priority = ""
+  linkCommits = [ ]
+
+    [[processes.tasks.checkList]]
+    id = "mutgtu4qe0wuw9gtdwzq30q6"
+    title = "Asks the user for following inputs "
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "ish2uvebqi6ri78p8wqv5ewe"
+    title = "Records for the central body and orbiting bodies with needed parameters"
+    completed = true
 
 [[processes]]
 id = "y138qcsjmr9vvqvvj9ucbr54"
