@@ -4,7 +4,7 @@ type orbiting_body = {
   mass : float;            (* Mass of the orbiting body (kg) *)
   semi_major_axis : float; (* Semi-major axis (meters) *)
   eccentricity : float;    (* Eccentricity (0 to 1) *)
-  true_anomaly : float;    (* True anomaly (radians) *)
+  true_anomaly : float;    (* True anomaly (radians) *) (* *)
   inclination : float;     (* Inclination (radians) *)
   argument_of_periapsis : float; (* Argument of periapsis (radians) *)
   longitude_of_ascending_node : float; (* Longitude of ascending node (radians) *)
