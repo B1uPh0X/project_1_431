@@ -58,7 +58,7 @@ let input_orbiting_body () =
   body
 ;;
   
-let () =
+let () = 
   let _ = input_orbiting_body() in 
   let today = { year = 2024; month = 10; day = 31 } in
   let central_mass = input_float "Enter the mass of the central body (kg)" in
