@@ -17,17 +17,17 @@ name = "TODO"
 
     [[processes.tasks.checkList]]
     id = "l747kda6oix0338xk9jmmg72"
-    title = "CheckList 1"
-    completed = false
+    title = "Info Dialogue"
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "y4pjj36wtcmkkrez6cc0xgoc"
-    title = "CheckList 2"
-    completed = false
+    title = "Calculations based"
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "xbshyqdecspmowvblospozv4"
-    title = "CheckList 3"
+    title = "Need in plotting"
     completed = false
 
     [[processes.tasks.linkCommits]]
@@ -36,7 +36,7 @@ name = "TODO"
 
   [[processes.tasks]]
   id = "vq783zwugp95k640cmr7v1n2"
-  title = "Having the First Orbiting Body"
+  title = "Having the First Orbiting Body "
   description = "<p>Have the measurements of the first orbiting object</p>"
   tag = "backlog"
   linkFiles = [ ]
@@ -46,28 +46,28 @@ name = "TODO"
 
     [[processes.tasks.checkList]]
     id = "bv6259r560l93ku7dz7o3h38"
-    title = "Checklist 1"
-    completed = false
+    title = "Info Dialogue"
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "dblz7wshdqq0c275z9269631"
-    title = "Checklist 2"
+    title = "Calculations based on Information Given"
     completed = false
 
     [[processes.tasks.checkList]]
     id = "fjjx0l7yo10nuus1h9n2by0d"
-    title = "Checklist 3"
+    title = "Display the results using Oplot"
     completed = false
 
   [[processes.tasks]]
   id = "jldnt73huy4wxjyoywv42c2w"
   title = "Calculation"
-  description = "Calculations are mades based on the measurements given"
+  description = "<p>Calculations are mades based on the measurements given</p>"
   tag = "backlog"
   linkFiles = [ ]
   dueDate = ""
   checkList = [ ]
-  priority = ""
+  priority = "High"
   linkCommits = [ ]
 
   [[processes.tasks]]
@@ -78,7 +78,7 @@ name = "TODO"
   linkFiles = [ ]
   dueDate = ""
   checkList = [ ]
-  priority = ""
+  priority = "High"
   linkCommits = [ ]
 
 [[processes]]
@@ -115,6 +115,21 @@ name = "In Progress"
     title = "Confirm with the Team"
     completed = false
 
+[[processes]]
+id = "y138qcsjmr9vvqvvj9ucbr54"
+name = "Done"
+
+  [[processes.tasks]]
+  id = "xexz8dbf0ohncf84j0j4hd7y"
+  title = "Researching on What to do for Project involving Oplot library"
+  description = "<p>Find a suitable project to do involving the oplot library, decided on Elliptical Orbits</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
   [[processes.tasks]]
   id = "zwartoqjsdpfh6mkcik0u1sg"
   title = "Info Dialogue"
@@ -134,18 +149,3 @@ name = "In Progress"
     id = "ish2uvebqi6ri78p8wqv5ewe"
     title = "Records for the central body and orbiting bodies with needed parameters"
     completed = true
-
-[[processes]]
-id = "y138qcsjmr9vvqvvj9ucbr54"
-name = "Done"
-
-  [[processes.tasks]]
-  id = "xexz8dbf0ohncf84j0j4hd7y"
-  title = "Researching on What to do for Project involving Oplot library"
-  description = "<p>Find a suitable project to do involving the oplot library, decided on Elliptical Orbits</p>"
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
