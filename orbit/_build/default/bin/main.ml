@@ -50,7 +50,21 @@ let input_orbiting_body () =
   let longitude_of_ascending_node = input_float "Enter the longitude of ascending node (radians)" in
   {mass; semi_major_axis; eccentricity; true_anomaly; inclination; argument_of_periapsis; longitude_of_ascending_node}
 ;;
-  
+
+
+let calculate_ellipse_points body num_points =
+  let a = body.semi_major_axis in
+  let e = body.eccentricity in
+  Array.init num_points (fun i ->
+    let theta = 2. *. Float.pi *. (float_of_int i /. float_of_int num_points) in
+    let r = a *. (1. -. e *. e) /. (1. +. e *. cos theta) in
+    let x = r *. cos theta in
+    let y = r *. sin theta in
+    (x, y)
+  )
+;;
+
+
 let () = 
   let today = { year = 2024; month = 10; day = 31 } in
   let central_mass = input_float "Enter the mass of the central body (kg)" in
