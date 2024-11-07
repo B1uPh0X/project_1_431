@@ -64,11 +64,12 @@ let calculate_ellipse_points body num_points =
 ;;
 
 let plot_ellipse points =
-  let plot_data = List.map (fun (x, y) -> (x, y)) points in
+  let plot_data = Array.to_list points in
   let scatter = Scatter.scatter ~data:plot_data () in
   let plot = Plot.plot [scatter] in
   Oplot.Backend.Gnuplot.plot plot
 ;;
+
 
 let () = 
   let today = { year = 2024; month = 10; day = 31 } in
