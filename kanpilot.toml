@@ -7,36 +7,67 @@ id = "ti89o6mr2v92thdsccpjdn1g"
 name = "TODO"
 
   [[processes.tasks]]
-  id = "vx2nau86wpg4pbvfu79wcew0"
-  title = "Having a Central Body for Orbit"
-  description = "<p>Need the main thing for the other things to orbit around</p>"
+  id = "a6a9sf4d7u4qc3fkg3gv0s3w"
+  title = "3D Display/Simulation"
+  description = """
+Upscaling from 2D to 3D
+Will take in additional factors that will then be taken into account for calculation and plotting"""
   tag = "backlog"
-  linkFiles = [ "src/kanban/interface.ts" ]
-  dueDate = "Sat Oct 19 2024 09:49:14 GMT-0400 (Eastern Daylight Time)"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
   priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "wljbxmlu6nq0lqh5adnjhpdv"
+  title = "Time Configuration"
+  description = "Will take changes in time in to calculation and display the updated results"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+[[processes]]
+id = "wqbb0d381n2vhnyfrfyqtl4v"
+name = "In Progress"
+
+  [[processes.tasks]]
+  id = "wdi5gb60rnv2ofywe0odgctn"
+  title = "Display/Simulation"
+  description = "<p>Will display the Orbits on a grid, with potentially one with the planets moving at a certain rate of time t.</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  priority = "High"
+  linkCommits = [ ]
 
     [[processes.tasks.checkList]]
-    id = "l747kda6oix0338xk9jmmg72"
-    title = "Info Dialogue"
+    id = "z7tm5j9wbnfoghvdjnfupvw7"
+    title = "Function to plot the calculated ellipse points"
     completed = true
 
     [[processes.tasks.checkList]]
-    id = "y4pjj36wtcmkkrez6cc0xgoc"
-    title = "Calculations based"
-    completed = true
-
-    [[processes.tasks.checkList]]
-    id = "xbshyqdecspmowvblospozv4"
-    title = "Need in plotting"
+    id = "o5yeac2ovfsjxug5bbpy6lgb"
+    title = "Fixing the bug that comes from the compilation"
     completed = false
 
-    [[processes.tasks.linkCommits]]
-    hash = "123456"
-    comment = ""
+  [[processes.tasks]]
+  id = "jf12cmbgx0rwvaahpwnwk3s3"
+  title = "Compiling Issues"
+  description = "<p>Addressing the compiling issues when using the oplot library</p>"
+  tag = "bug"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
   [[processes.tasks]]
   id = "vq783zwugp95k640cmr7v1n2"
-  title = "Having the First Orbiting Body "
+  title = "Having the Orbiting Body(ies)"
   description = "<p>Have the measurements of the first orbiting object</p>"
   tag = "backlog"
   linkFiles = [ ]
@@ -52,67 +83,16 @@ name = "TODO"
     [[processes.tasks.checkList]]
     id = "dblz7wshdqq0c275z9269631"
     title = "Calculations based on Information Given"
-    completed = false
+    completed = true
 
     [[processes.tasks.checkList]]
     id = "fjjx0l7yo10nuus1h9n2by0d"
-    title = "Display the results using Oplot"
-    completed = false
-
-  [[processes.tasks]]
-  id = "jldnt73huy4wxjyoywv42c2w"
-  title = "Calculation"
-  description = "<p>Calculations are mades based on the measurements given</p>"
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = "High"
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "wdi5gb60rnv2ofywe0odgctn"
-  title = "Display/Simulation"
-  description = "<p>Will display the Orbits on a grid, with potentially one with the planets moving at a certain rate of time t.</p>"
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = "High"
-  linkCommits = [ ]
-
-[[processes]]
-id = "wqbb0d381n2vhnyfrfyqtl4v"
-name = "In Progress"
-
-  [[processes.tasks]]
-  id = "y4dpsh6t8q2dwrblfkcxztmd"
-  title = "Research on Dune and Oplot"
-  description = "<p>Find more about working with both dune and oplot</p>"
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  priority = "High"
-  linkCommits = [ ]
-
-    [[processes.tasks.checkList]]
-    id = "o8p7c2768lyjz2fmyn2zo0pz"
-    title = "Understanding how they work"
+    title = "Plots the results using Oplot Library"
     completed = true
 
     [[processes.tasks.checkList]]
-    id = "ddmc1ovpgwf6j1q4mmeso5yj"
-    title = "Install them both"
-    completed = true
-
-    [[processes.tasks.checkList]]
-    id = "stra5n3wawig4sk7unen7w3l"
-    title = "Try and Run a Simple Program"
-    completed = true
-
-    [[processes.tasks.checkList]]
-    id = "tidvx9pxe2ok9c2djrkktxzp"
-    title = "Confirm with the Team"
+    id = "lrrrexm8csyfpvt7oxpcvurd"
+    title = "Fixing the bug that is from the compilation"
     completed = false
 
 [[processes]]
@@ -148,4 +128,73 @@ name = "Done"
     [[processes.tasks.checkList]]
     id = "ish2uvebqi6ri78p8wqv5ewe"
     title = "Records for the central body and orbiting bodies with needed parameters"
+    completed = true
+
+  [[processes.tasks]]
+  id = "jldnt73huy4wxjyoywv42c2w"
+  title = "Calculation"
+  description = "<p>Calculations are mades based on the measurements given</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = "High"
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "vx2nau86wpg4pbvfu79wcew0"
+  title = "Having a Central Body for Orbit"
+  description = "<p>Need the main thing for the other things to orbit around</p>"
+  tag = "backlog"
+  linkFiles = [ "src/kanban/interface.ts" ]
+  dueDate = "Sat Oct 19 2024 09:49:14 GMT-0400 (Eastern Daylight Time)"
+  priority = ""
+
+    [[processes.tasks.checkList]]
+    id = "l747kda6oix0338xk9jmmg72"
+    title = "Info Dialogue"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "y4pjj36wtcmkkrez6cc0xgoc"
+    title = "Calculations based"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "xbshyqdecspmowvblospozv4"
+    title = "Need in plotting"
+    completed = true
+
+    [[processes.tasks.linkCommits]]
+    hash = "123456"
+    comment = ""
+
+  [[processes.tasks]]
+  id = "y4dpsh6t8q2dwrblfkcxztmd"
+  title = "Research on Dune and Oplot"
+  description = "<p>Find more about working with both dune and oplot</p>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  priority = "High"
+  linkCommits = [ ]
+
+    [[processes.tasks.checkList]]
+    id = "o8p7c2768lyjz2fmyn2zo0pz"
+    title = "Understanding how they work"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "ddmc1ovpgwf6j1q4mmeso5yj"
+    title = "Install them both"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "stra5n3wawig4sk7unen7w3l"
+    title = "Try and Run a Simple Program"
+    completed = true
+
+    [[processes.tasks.checkList]]
+    id = "tidvx9pxe2ok9c2djrkktxzp"
+    title = "Confirm with the Team"
     completed = true

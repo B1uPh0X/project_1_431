@@ -1,4 +1,4 @@
 (executable
  (public_name orbit)
- (name Plotting)
+ (name app)
  (libraries oplot))
