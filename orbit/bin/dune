@@ -1,4 +1,4 @@
 (executable
- (public_name project_1_431)
- (name Plotting_updated)
+ (public_name orbit)
+ (name app)
  (libraries oplot))
