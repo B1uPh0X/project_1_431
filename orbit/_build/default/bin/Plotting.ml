@@ -1,4 +1,4 @@
-
+open Oplot
 
 type orbiting_body = {
   mass : float;            (* Mass of the orbiting body (kg) *)
@@ -51,7 +51,40 @@ let input_orbiting_body () =
   {mass; semi_major_axis; eccentricity; true_anomaly; inclination; argument_of_periapsis; longitude_of_ascending_node}
 ;;
   
+let calculate_ellipse_points body num_points =
+  let a = body.semi_major_axis in
+  let e = body.eccentricity in
+  Array.init num_points (fun i ->
+    let theta = 2. *. Float.pi *. (float_of_int i /. float_of_int num_points) in
+    let r = a *. (1. -. e *. e) /. (1. +. e *. cos theta) in
+    let x = r *. cos theta in
+    let y = r *. sin theta in
+    (x, y)
+  )
+;;
+
+let plot_orbit central_body bodies =
+  let n_points = 100 in
+  let plot = Plot.create () in
+  Plot.set_xlabel plot "X (m)";
+  Plot.set_ylabel plot "Y (m)";
+
+  for i = 0 to Array.length bodies - 1 do
+    let body = bodies.(i) in
+    let points = Array.init n_points (fun j ->
+      let time = (float_of_int j) *. (365.25 *. 24.0 *. 3600.0) /. float_of_int n_points in  (* Time is scaled to 1 year *)
+      calculate_position body time
+    ) in
+    let x = Array.map fst points in
+    let y = Array.map snd points in
+    Plot.plot ~title:(Printf.sprintf "Orbit of Body %d" (i + 1)) ~color:(`Color (i * 50 mod 255, 100, 100)) (x, y);
+  done;
+
+  Plot.show plot
+;;
+
 let () = 
+
   let today = { year = 2024; month = 10; day = 31 } in
   let central_mass = input_float "Enter the mass of the central body (kg)" in
   let central_body = {mass = central_mass; gravitational_constant = get_gravitational_constant ()} in
@@ -60,12 +93,14 @@ let () =
   Printf.printf "Number of orbiting bodies: %d\nGravitational Constant: %f\nCentral Body Mass: %f\n" 
     num_bodies central_body.gravitational_constant central_body.mass;
   flush stdout;
+
   let orbiting_bodies = ref [] in
   for i = 1 to num_bodies do
     Printf.printf "\nEnter details for orbiting body %d\n" i;
     let body = input_orbiting_body () in
     orbiting_bodies := !orbiting_bodies @ [body]
   done;
+
   for i = 0 to List.length !orbiting_bodies - 1 do
     let body = List.nth !orbiting_bodies i in
     Printf.printf "\n- Orbiting Body %d \n
@@ -78,5 +113,10 @@ let () =
     - Longitude of Ascending Node: %f\n"
       (i + 1) body.mass body.semi_major_axis body.eccentricity body.true_anomaly body.inclination body.argument_of_periapsis body.longitude_of_ascending_node
   done;
-  ;;
-  
+
+  List.iter (fun body ->
+  let points = calculate_ellipse_points body 100 in
+  plot_ellipse points
+  ) !orbiting_bodies;
+
+;;

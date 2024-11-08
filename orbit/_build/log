@@ -13,4 +13,11 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/simonliang4/.opam/default/bin/ocamlc.opt -config > /var/folders/20/0gszkc6s08sdh3g9h30qxjwc0000gn/T/dune_b8ccf9_output
+$ /Users/simonliang4/.opam/default/bin/ocamlc.opt -config > /var/folders/20/0gszkc6s08sdh3g9h30qxjwc0000gn/T/dune_91ce6c_output
+$ (cd _build/default && /Users/simonliang4/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.Plotting.eobjs/byte -I bin/.Plotting.eobjs/native -I /Users/simonliang4/.opam/default/lib/bigarray-compat -I /Users/simonliang4/.opam/default/lib/ctypes -I /Users/simonliang4/.opam/default/lib/ctypes-foreign -I /Users/simonliang4/.opam/default/lib/integers -I /Users/simonliang4/.opam/default/lib/lablgl -I /Users/simonliang4/.opam/default/lib/ocaml/threads -I /Users/simonliang4/.opam/default/lib/ocaml/unix -I /Users/simonliang4/.opam/default/lib/oplot -I /Users/simonliang4/.opam/default/lib/stdlib-shims -I /Users/simonliang4/.opam/default/lib/tsdl -I /Users/simonliang4/.opam/default/lib/tsdl-image -I /Users/simonliang4/.opam/default/lib/tsdl-ttf -intf-suffix .ml -no-alias-deps -opaque -o bin/.Plotting.eobjs/native/dune__exe__Plotting.cmx -c -impl bin/Plotting.ml)
+> File "bin/Plotting.ml", line 68, characters 13-24:
+> 68 |   let plot = Plot.create () in
+>                   ^^^^^^^^^^^
+> Error: Unbound module Plot
+> Hint: Did you mean Plt?
+[2]

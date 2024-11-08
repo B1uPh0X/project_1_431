@@ -1,2 +1,3 @@
 (library
- (name orbit))
+ (name orbit)
+ (libraries oplot))
