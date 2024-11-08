@@ -15,11 +15,11 @@ type central_body = {
   gravitational_constant : float; (* Gravitational constant *)
 };;
 
-type current_time = {
+(*type current_time = {
   year : int;
   month : int;
   day : int;
-};;
+};;*)
 
 
 let input_float prompt =
@@ -72,20 +72,23 @@ let plot_ellipse points =
 
 
 let () = 
-  let today = { year = 2024; month = 10; day = 31 } in
+
+
   let central_mass = input_float "Enter the mass of the central body (kg)" in
   let central_body = {mass = central_mass; gravitational_constant = get_gravitational_constant ()} in
   let num_bodies = input_int "Enter the number of orbiting bodies" in 
-  Printf.printf "Today is: %d / %d / %d\n" today.month today.day today.year;
+  
   Printf.printf "Number of orbiting bodies: %d\nGravitational Constant: %f\nCentral Body Mass: %f\n" 
     num_bodies central_body.gravitational_constant central_body.mass;
   flush stdout;
+
   let orbiting_bodies = ref [] in
   for i = 1 to num_bodies do
     Printf.printf "\nEnter details for orbiting body %d\n" i;
     let body = input_orbiting_body () in
     orbiting_bodies := !orbiting_bodies @ [body]
   done;
+
   for i = 0 to List.length !orbiting_bodies - 1 do
     let body = List.nth !orbiting_bodies i in
     Printf.printf "\n- Orbiting Body %d \n
@@ -98,8 +101,10 @@ let () =
     - Longitude of Ascending Node: %f\n"
       (i + 1) body.mass body.semi_major_axis body.eccentricity body.true_anomaly body.inclination body.argument_of_periapsis body.longitude_of_ascending_node
   done;
-  for body in !orbiting_bodies do
-    let points = calculate_ellipse_points body 100 in
-    plot_ellipse points;
-  done;
+
+  List.iter (fun body ->
+  let points = calculate_ellipse_points body 100 in
+  plot_ellipse points
+  ) !orbiting_bodies;
+
 ;;
