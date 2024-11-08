@@ -19,6 +19,17 @@ Will take in additional factors that will then be taken into account for calcula
   priority = ""
   linkCommits = [ ]
 
+  [[processes.tasks]]
+  id = "wljbxmlu6nq0lqh5adnjhpdv"
+  title = "Time Configuration"
+  description = "Will take changes in time in to calculation and display the updated results"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
 [[processes]]
 id = "wqbb0d381n2vhnyfrfyqtl4v"
 name = "In Progress"
