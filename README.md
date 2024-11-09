@@ -15,4 +15,12 @@ Installations Needed:
         dune
         oplot
 
-(e.g. opam install oplot)
+You will need oplot and its dependency:
+
+```opam install oplot```
+
+```opam install gsl```
+
+You will also need dune, get it with the following:
+
+```sudo apt install ocaml-dune```

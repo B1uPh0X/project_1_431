@@ -1,4 +1,5 @@
 (executable
  (public_name orbit)
  (name app)
- (libraries oplot))
+ (libraries orbit oplot)
+ (package oplot))

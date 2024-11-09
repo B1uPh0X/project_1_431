@@ -1,3 +1,6 @@
 (library
- (name orbit)
- (libraries oplot))
+ (name orbit))
+(library
+ (name oplot)
+ (public_name oplot)
+ (libraries graphics tsdl tsdl-image tsdl-ttf lablgl))

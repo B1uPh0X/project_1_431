@@ -1,0 +1,283 @@
+(* GLenum *)
+
+color
+depth
+accum
+stencil
+points
+lines
+polygon
+triangles
+quads
+line_strip
+line_loop
+triangle_strip
+triangle_fan
+quad_strip     
+
+front
+back
+both -> GL_FRONT_AND_BACK
+
+point
+line
+fill
+
+cw
+ccw
+
+modelview
+projection
+texture
+
+modelview_matrix
+projection_matrix
+texture_matrix
+
+(* glEnable *)
+alpha_test
+auto_normal
+blend
+clip_plane0
+clip_plane1
+clip_plane2
+clip_plane3
+clip_plane4
+clip_plane5
+(* color_logic_op *)
+color_material
+cull_face
+depth_test
+dither
+fog
+(* index_logic_op *)
+light0
+light1
+light2
+light3
+light4
+light5
+light6
+light7
+lighting
+line_smooth
+line_stipple
+logic_op
+index_logic_op
+color_logic_op
+map1_color_4
+map1_index
+map1_normal
+map1_texture_coord_1
+map1_texture_coord_2
+map1_texture_coord_3
+map1_texture_coord_4
+map1_vertex_3
+map1_vertex_4
+map2_color_4
+map2_index
+map2_normal
+map2_texture_coord_1
+map2_texture_coord_2
+map2_texture_coord_3
+map2_texture_coord_4
+map2_vertex_3
+map2_vertex_4
+normalize
+point_smooth
+polygon_offset_fill
+polygon_offset_line
+polygon_offset_point
+polygon_smooth
+polygon_stipple
+scissor_test
+stencil_test
+texture_1d
+texture_2d
+texture_gen_q
+texture_gen_r
+texture_gen_s
+texture_gen_t
+
+(* glShadeModel *)
+flat
+smooth
+
+(* glLight *)
+ambient
+diffuse
+specular
+position
+spot_direction
+spot_exponent
+spot_cutoff
+constant_attenuation
+linear_attenuation
+quadratic_attenuation
+
+(* glMaterial *)
+(* ambient *)
+(* diffuse *)
+(* specular *)
+emission
+shininess
+ambient_and_diffuse
+color_indexes
+
+(* glDepthFunc, glAlphaFunc *)
+never less equal lequal greater notequal gequal always
+
+(* glBlendFunc *)
+zero
+one
+dst_color
+one_minus_dst_color
+src_alpha
+one_minus_src_alpha
+dst_alpha
+one_minus_dst_alpha
+src_alpha_saturate
+src_color
+one_minus_src_color
+
+(* glFog *)
+linear exp exp2
+
+(* glNewList *)
+compile compile_and_execute
+
+(* data types *)
+bitmap byte short int float double
+ubyte -> GL_UNSIGNED_BYTE
+ushort -> GL_UNSIGNED_SHORT
+uint -> GL_UNSIGNED_INT
+
+(* glAccum *)
+load add mult return
+
+(* glDrawPixels *)
+color_index stencil_index depth_component rgb bgr rgba bgra
+red green blue alpha luminance luminance_alpha
+
+(* glHint *)
+dont_care fastest nicest
+
+(* glLogicOp *)
+clear set copy copy_inverted noop invert And nand Or nor
+xor equiv and_reverse and_inverted or_reverse or_inverted
+
+(* glPixelTransfer *)
+alpha_bias
+alpha_scale
+blue_bias
+blue_scale
+depth_bias
+depth_scale
+green_bias
+green_scale
+index_offset
+index_shift
+map_color
+map_stencil
+red_bias
+red_scale
+
+(* glPixelMap *)
+i_to_i -> GL_PIXEL_MAP_I_TO_I
+i_to_r -> GL_PIXEL_MAP_I_TO_R
+i_to_g -> GL_PIXEL_MAP_I_TO_G
+i_to_b -> GL_PIXEL_MAP_I_TO_B
+i_to_a -> GL_PIXEL_MAP_I_TO_A
+s_to_s -> GL_PIXEL_MAP_S_TO_S
+r_to_r -> GL_PIXEL_MAP_R_TO_R
+g_to_g -> GL_PIXEL_MAP_G_TO_G
+b_to_b -> GL_PIXEL_MAP_B_TO_B
+a_to_a -> GL_PIXEL_MAP_A_TO_A
+
+(* glPixelStore *)
+pack_swap_bytes
+pack_lsb_first
+pack_row_length
+pack_skip_pixels
+pack_skip_rows
+pack_alignment
+unpack_swap_bytes
+unpack_lsb_first
+unpack_row_length
+unpack_skip_pixels
+unpack_skip_rows
+unpack_alignment
+
+(* glReadBuffer *)
+front_left front_right back_left back_right left right
+
+(* glDrawBuffer *)
+none
+
+(* glStencilOp *)
+keep replace incr decr
+
+(* glTexEnv *)
+modulate decal
+
+(* glTexGen *)
+s t r q
+object_plane eye_plane
+eye_linear object_linear sphere_map
+
+(* glTexParameter *)
+min_filter -> GL_TEXTURE_MIN_FILTER
+mag_filter -> GL_TEXTURE_MAG_FILTER
+wrap_s -> GL_TEXTURE_WRAP_S
+wrap_t -> GL_TEXTURE_WRAP_T
+border_color -> GL_TEXTURE_BORDER_COLOR
+priority -> GL_TEXTURE_PRIORITY
+nearest nearest_mipmap_nearest linear_mipmap_nearest
+nearest_mipmap_linear linear_mipmap_linear
+generate_mipmap
+clamp repeat
+
+(* glGetString *)
+vendor renderer version extensions
+
+(* glRenderMode *)
+render select feedback
+
+(* glFeedBackBuffer *)
+_2d -> GL_2D
+_3d -> GL_3D
+_3d_color -> GL_3D_COLOR
+_3d_color_texture -> GL_3D_COLOR_TEXTURE
+_4d_color_texture -> GL_4D_COLOR_TEXTURE
+
+$$
+(* glLightModel *)
+local_viewer two_side mode density start index End
+color_control separate_specular_color single_color
+
+(* glHint *)
+perspective_correction
+
+(* glMap1, glMap2 *)
+vertex_3 vertex_4 color_4 normal texture_coord_1 texture_coord_2
+texture_coord_3 texture_coord_4
+
+(* glPushAttrib *)
+accum_buffer color_buffer current depth_buffer enable eval
+hint list pixel_mode scissor stencil_buffer transform viewport
+
+(* glReadBuffer *)
+aux
+
+(* glArray *)
+edge_flag texture_coord vertex
+two three four
+
+(* glGetError *)
+no_error
+invalid_enum invalid_value invalid_operation
+stack_overflow stack_underflow
+out_of_memory table_too_large
+
+(* glCreateShader *)
+vertex_shader fragment_shader
