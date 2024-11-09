@@ -1,0 +1,38 @@
+(* $Id: glu_tags.var,v 1.5 2002-05-01 03:35:00 garrigue Exp $: tags for GLU library *)
+
+(* gluGetString *)
+version extensions
+
+(* gluNextContour *)
+exterior interior unknown ccw cw
+
+(* gluNurbsProperty *)
+sampling_method path_length parametric_error domain_distance
+sampling_tolerance
+parametric_tolerance
+u_step v_step
+display_mode fill
+culling auto_load_matrix
+polygon -> GLU_OUTLINE_POLYGON
+patch -> GLU_OUTLINE_PATCH
+
+(* gluQuadricDrawStyle *)
+line silhouette point
+(* gluQuadricNormals *)
+none flat smooth
+(* gluQuadricOrientation *)
+inside outside
+
+(* gluTessProperty *)
+winding_rule -> GLU_TESS_WINDING_RULE
+odd -> GLU_TESS_WINDING_ODD
+nonzero -> GLU_TESS_WINDING_NONZERO
+positive -> GLU_TESS_WINDING_POSITIVE
+negative -> GLU_TESS_WINDING_NEGATIVE
+abs_geq_two -> GLU_TESS_WINDING_ABS_GEQ_TWO
+boundary_only -> GLU_TESS_BOUNDARY_ONLY
+tolerance -> GLU_TESS_TOLERANCE
+
+$$
+(* gluNurbsCurve *)
+trim_2 trim_3
