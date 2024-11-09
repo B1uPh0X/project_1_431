@@ -1,1 +1,1 @@
-bin/app.ml: Array Float List Oplot Plot Printf Scanf Scatter
+bin/app.ml: Array Float List Oplot Printf Scanf

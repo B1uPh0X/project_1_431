@@ -1,5 +1,4 @@
-open Oplot.Plt
-
+open Oplot.Plt;;
 
 (* Creates an Orbiting body with the Parameters *)
 (* Modified for 2D but will focux on 3D after some time *)
@@ -57,17 +56,37 @@ let calculate_ellipse_points body num_points =
     let r = a *. (1. -. e *. e) /. (1. +. e *. cos theta) in
     let x = r *. cos theta in
     let y = r *. sin theta in
-    (x, y)
+    (x, y)  (* Directly use (x, y) tuples *)
   )
 ;;
 
+let plot_orbit body =
+  let points = Array.to_list (calculate_ellipse_points body 1000) in
+  let orbit_curve = Lines points in
+  plot [orbit_curve];  (* Display the plot *)
+  output "orbit.png" [orbit_curve]  (* Save the plot to an image file *)
+;;
+
+let () = 
+  let central_mass = input_float "Enter the mass of the central body (kg)" in
+  let central_body = {mass = central_mass; gravitational_constant = get_gravitational_constant ()} in
+  let num_bodies = int_of_string (input_float "Enter the number of orbiting bodies") in
+  for i = 1 to num_bodies do
+    Printf.printf "\nEnter details for orbiting body %d\n" i;
+    let body = input_orbiting_body () in
+    Printf.printf "\n- Orbiting Body %d: Mass: %f kg\n" i body.mass;
+    plot_orbit body;
+    Printf.printf "Orbit of body %d plotted and saved as 'orbit.png'\n" i;
+  done
+;;
+
 (* Plots the ellipse points using the points from the calculation *)
-let plot_ellipse points =
+(*let plot_ellipse points =
   let plot_data = Array.to_list points in
   let scatter = Scatter.scatter ~data:plot_data () in
   Plot.display [scatter]
 ;;
-
+*)
 let () = 
   (* Queries the user and creates a central body based on input *)
   let central_mass = input_float "Enter the mass of the central body (kg)" in
@@ -98,8 +117,8 @@ let () =
   done;
 
   (* Goes through the bodies and calculate/plots the ellipse points *)
-  List.iter (fun body ->
+  (*List.iter (fun body ->
     let points = calculate_ellipse_points body 100 in
     plot_ellipse points
-  ) !orbiting_bodies
+  ) !orbiting_bodies*)
 ;;
