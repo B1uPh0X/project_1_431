@@ -21,6 +21,8 @@ You will need oplot and its dependency:
 
 ```opam install gsl```
 
+```opam install lablgl```
+
 You will also need dune, get it with the following:
 
 ```sudo apt install ocaml-dune```
