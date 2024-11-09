@@ -1,4 +1,4 @@
-open Oplot.Plt
+open Oplot
 
 
 (* Creates an Orbiting body with the Parameters *)
